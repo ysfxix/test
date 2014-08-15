@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+   <!-- <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap-combined.min.css" rel="stylesheet"> -->
+   <link href="css/bootstrap-combined.min.css" rel="stylesheet">
+
+ 
+  </head>
+  <body ng-app="app">
+	
+	<ul ng-controller='NavController'>
+	<li ng-repeat='MenuItem in NavMenu'><a href='{{MenuItem.menuItemLink}}'>{{MenuItem.menuItemName}}</a></li>
+	
+	</ul>
+	
+	
+	<hr>
+	<br>
+	
+	<div ng-view=""></div>
+	
+	
+
+    
+  
+	<hr>
+	<br>
+  
+  Copyright 2014 - iJust
+  
+    
+        
+       
+  <script src="scripts/angular.min.js"></script>
+	<script src="scripts/angular-route.min.js"></script>
+  <script src="scripts/app.js"></script>
+	<script src="scripts/Controllers/homeController.js"></script>
+	<script src="scripts/Controllers/aboutController.js"></script>
+	<script src="scripts/Controllers/contactController.js"></script>
+	<script src="scripts/Controllers/NavController.js"></script>
+  <script src="scripts/Directives/CharLimit.js"></script>	
+
+    
+  </body>
+</html>
